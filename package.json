@@ -1,0 +1,40 @@
+{
+  "name": "taro-plugin-auto-declare-define-constants",
+  "version": "0.0.10",
+  "description": "Taro Plugin-Auto generate `defineConstants` config's declaration files",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "dev": "npm run clean && rollup -cw --bundleConfigAsCjs",
+    "build": "npm run clean && rollup -c --bundleConfigAsCjs",
+    "clean": "rimraf -rf dist",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "keywords": [
+    "taro",
+    "plugin",
+    "taro-plugin",
+    "defineConstants"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimbaOvO/taro-plugin-auto-declare-define-constants.git"
+  },
+  "author": "sweet.simba@foxmail.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@tarojs/service": "^3.6.1",
+    "@types/node": "^18.14.0",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.1.2",
+    "rollup": "^3.17.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.9.5",
+    "tslint": "^6.1.3"
+  }
+}

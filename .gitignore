@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+npm-debug.log
+yarn-error.log
+tests/unit/coverage
+tests/e2e/reports
+%APPDATA%/
+.idea/
+debug.log
+.vscode
