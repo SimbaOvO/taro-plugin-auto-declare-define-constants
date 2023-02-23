@@ -56,4 +56,4 @@ yarn dev:weapp
 ## Tips 💡
 1. 在设计此插件的过程中考虑到开发中经常会出现在`defineConstants`中未使用`JSON.stringify()` or `'"xxx"'`来定义字符串变量 故增加此提示供开发者自行检查（该key将被设置为`unknown`类型）
 ![image.png](https://s2.loli.net/2023/02/22/RQzpsAiPuhmoSlt.png)
-2. 如果插件未满足你想要的效果 欢迎提issues 会抽空查看的0.0 ~~~（不好说）~~~
+2. 如果插件未满足你想要的效果 欢迎提issues 会抽空查看的0.0 ~~（不好说）~~
