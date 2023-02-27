@@ -32,8 +32,7 @@ function generateDeclare(config: Record<string, any>) {
       } catch (err) {
         valueType = 'unknown';
 
-        // @ts-ignore
-        if (err.toString().includes('SyntaxError')) {
+        if (err && err.toString().includes('SyntaxError')) {
           console.warn(
             '\x1b[33m%s',
             `\n(!!!)Taro-plugin-auto-declare-define-constants: \nConfig: defineConstants中有一个未识别成字符串：「${currentKey}」（如果就是要变量/表达式请忽略）\n`,
