@@ -1,5 +1,8 @@
-# taro-plugin-auto-declare-define-constants  
-用于Taro框架在`config/xx.js`中设置的`defineConstants`属性自动生成声明文件的一个插件 🔧  
+<h1 align="center">Taro Plugin: Auto-Declare-Define-Constants</h1>
+<p align="center">
+  <a href='https://www.npmjs.com/package/taro-plugin-auto-declare-define-constants'><img src="https://img.shields.io/npm/v/taro-plugin-auto-declare-define-constants.svg" alt="Version"></a>
+  <h5 align="center">用于Taro框架在<code>defineConstants</code>中的变量自动生成TS声明文件的一个插件 🔧 <h5>
+</p>
 
 ## 你得先知道的  
 `defineConstants`是用于配置一些全局变量供代码中进行使用 配置方式可参考 [Webpack DefinePlugin](https://webpack.js.org/plugins/define-plugin/)  
@@ -52,6 +55,7 @@ npm run dev:weapp
 
 yarn dev:weapp
 ```  
+![image-20230301145055217.png](https://s2.loli.net/2023/03/01/hMjuTPVpcIXK1y4.png)
 
 ## Tips 💡
 1. 在设计此插件的过程中考虑到开发中经常会出现在`defineConstants`中未使用`JSON.stringify()` or `'"xxx"'`来定义字符串变量 故增加此提示供开发者自行检查（该key将被设置为`unknown`类型）
